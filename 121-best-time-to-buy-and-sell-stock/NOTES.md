@@ -10,4 +10,4 @@ index:0  arr=7    maxright=7  (6<7)            maxprofit= 5,       (7-7=0)so,(5,
 
 maxprofit=maxright-arr
 
-![image](https://user-images.githubusercontent.com/C:\Users\User\OneDrive\Pictures\Camera Roll.png)
+
