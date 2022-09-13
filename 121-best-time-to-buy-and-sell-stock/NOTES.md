@@ -8,6 +8,8 @@ index:2  arr=5    maxright=6  (6>5)            maxprofit= 3,       (6-5=1)so,(3,
 index:1  arr=1    maxright=6  (6>1)            maxprofit= 3,       (6-1=5)so,(3,5)     update maxprofit= 5 <br>
 index:0  arr=7    maxright=7  (6<7)            maxprofit= 5,       (7-7=0)so,(5,0)     update maxprofit= 5 <br>
 
-maxprofit=maxright-arr
+maxprofit=maxright-arr  <br>
+math.max= highest value find kore <br>
+math.min= lowest value find kore 
 
 
