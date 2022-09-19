@@ -12,5 +12,3 @@ maxprofit=maxright-arr  <br>
 math.max= highest value find kore <br>
 math.min= lowest value find kore 
 
-![121leet](https://user-images.githubusercontent.com/81003608/191062600-d8661b25-1f8e-423b-a5ce-cc898bf37781.PNG)
-
