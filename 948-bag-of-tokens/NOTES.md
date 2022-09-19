@@ -8,3 +8,4 @@ i2= 200 ,               power =500-200 ---300 ,                                 
 i3= 300 ,               power =300-300 ---0  ,                                                                 score= 2 ,    ans = 2
 last inndex r count hobe na oita score die kine felsi 
 array sorting ->   {min->left,max->right}  ->2pointer 
+![306889167_966313270791366_5670679667965371480_n](https://user-images.githubusercontent.com/81003608/191064048-591e45fb-d19d-4f10-b4a9-36aaaa6b1a1d.jpg)
