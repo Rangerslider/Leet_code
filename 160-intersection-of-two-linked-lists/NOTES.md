@@ -5,4 +5,6 @@ If p1 is pointing to NULL, set p1 to head of B.<br>
 Else, move to the next node of A.<br>
 If p2 is pointing to NULL, set p2 to head of A.<br>
 Else, move to the next node of B.
-Return the node pointed by p1.
+Return the node pointed by p1. 
+Time Complexity:O(N + M),  N and M is the size of the linked list
+Space Complexity:O(1), here  no extra space is used.
