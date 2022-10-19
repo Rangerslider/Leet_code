@@ -2,5 +2,6 @@ When we have set the next pointer of the left child of the parent node, we check
 If the right child is present, we simply set next of left child to right. i.e. par->left->next = par->right.<br>
 Else, we use a function nextRight() that basically returns the address of first node just to the right of the left child & simply assign next of left to the node returned. i.e. par->left->next = nextRight(par).
 nextRight() uses the parent node (par) and it’s next pointer (par->next), to look for the first non-leaf (and return address of its child – left/right, whichever present) node towards right in the same level.
-For the right child of the parent node, we simply use the nextRight() function to return the address of the node just towards the right of the right child at the same level and assign it’s next pointer to the returned address. i.e. par->right->next = nextRight().
+For the right child of the parent node, we simply use the nextRight() function to return the address of the node just towards the right of the right child <br>
+at the same level and assign it’s next pointer to the returned address. i.e. par->right->next = nextRight().
 If the node to the right of the current node at the same level is not present, we simply return null.
