@@ -1,0 +1,19 @@
+class Solution {
+    public int[] dailyTemperatures(int[] t) {
+        Stack <Integer> stack = new Stack <>();
+        int []map = new int [t.length];
+        for(int i = 0; i <t.length; i ++){
+            while (!stack.isEmpty()&& t[stack.peek()]<t[i]){
+                Integer a= stack.pop();//a= top index
+                int b = i - a;// day minus fuc b count the difference 
+                map[a] = b ;
+            }
+            stack.push(i);
+        }
+        while(!stack.isEmpty()){
+            Integer a = stack.pop();
+            map[a]= 0;
+        }
+        return map;
+    }
+}
