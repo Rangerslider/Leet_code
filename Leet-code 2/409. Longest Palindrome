@@ -1,0 +1,21 @@
+class Solution {
+    public int longestPalindrome(String s) {
+               if (s == null) return 0;
+        if (s.length() <= 1) return s.length();
+        int[] map = new int[128];
+        for (char c : s.toCharArray()) {
+            map[c]++;
+        }
+        boolean isOdd = false;
+        int res = 0;
+        for (char c = 'a'; c <= 'z'; c++) {
+            res += map[c]/2;
+            if (map[c] % 2 == 1) isOdd = true; 
+        }
+        for (char c = 'A'; c <= 'Z'; c++) {
+            res += map[c]/2;
+            if (map[c] % 2 == 1) isOdd = true; 
+        }
+        return isOdd ? res * 2 + 1 : res * 2; 
+    }
+}
