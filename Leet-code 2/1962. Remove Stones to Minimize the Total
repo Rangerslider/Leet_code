@@ -1,0 +1,24 @@
+class Solution {
+    public int minStoneSum(int[] piles, int k) {
+
+        int[] frequency = new int[10001];
+
+        for (int pile : piles) {
+            frequency[pile]++;
+        }
+        int sum = 0;
+        for (int i = 10000; i > 0; i--) {
+            if (frequency[i] == 0) {
+                continue;
+            }
+            if (k > 0) {
+                int f = Math.min(frequency[i], k);
+                frequency[(i + 1) / 2] += f;
+                frequency[i] -= f;
+                k -= f;
+            }
+            sum += i * frequency[i];
+        }
+        return sum;
+    }
+    }
