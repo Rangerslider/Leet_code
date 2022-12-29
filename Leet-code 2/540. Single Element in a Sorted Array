@@ -1,0 +1,18 @@
+class Solution {
+    public int singleNonDuplicate(int[] num) {
+    int l = 0;
+    int m = num.length - 1;
+    while (l < m) {
+      int mid = l + (m - l) / 2;
+      if (mid % 2 == 1) mid--;
+      if (num[mid] == num[mid + 1]) {
+        l = mid + 2;
+      } else {
+        m = mid;
+      }
+    }
+    return num[l];
+  }
+}
+        
+ 
