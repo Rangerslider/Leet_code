@@ -1,0 +1,27 @@
+class Solution {
+    public int findKthPositive(int[] arr, int k) {
+        if (arr[0]>k) return k;
+        int l =0;                     //l=lower
+        int h= arr.length -1;        // h= higher
+        int j= 0;                   //j= coles path /value of mid value 
+        while (l<=h){
+            int i = l + (h-l)/2;   //i= mid value
+            if (arr[i]- (i+1)< k){
+                j =i+1;
+                l =i+1;
+            }
+            else {
+                h= i - 1 ;
+            }
+        }
+        return k + j;
+    }
+}                                 // time : O(logn) space:O(1)
+
+/* int index = 0 ; int i = 0;
+while (i <arr.length && (arr[index]-(index+1))<k){
+    index = i+1;//zero index so addding 1 ;
+    i++;
+
+}*/ 
+//here time is 0(N) SO WE using binay search method for time complexity  
