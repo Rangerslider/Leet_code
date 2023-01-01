@@ -1,0 +1,21 @@
+class Solution {
+    public boolean wordPattern(String pattern, String s) {
+
+    Map<Character, Integer> a = new HashMap<>();
+    Map<String, Integer> b = new HashMap<>();
+    char[] c = pattern.toCharArray();
+    String[] d= s.split(" ");
+
+    if (c.length != d.length) {
+        return false;
+    }
+    for (Integer i = 0; i < c.length; i++) {
+        if (a.put(c[i], i) != b.put(d[i], i)){
+            return false;
+        } 
+    }
+    return true;
+    }
+}
+//Time complexity O(n)
+//Space complexity O(n)
