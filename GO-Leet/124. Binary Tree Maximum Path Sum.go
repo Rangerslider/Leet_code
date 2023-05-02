@@ -6,6 +6,10 @@
  *     Right *TreeNode
  * }
  */
+package main
+
+import "math"
+
 func maxPathSum(root *TreeNode) int {
 	ans := math.MinInt32
 
